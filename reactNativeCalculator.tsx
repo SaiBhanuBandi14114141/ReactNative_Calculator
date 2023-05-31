@@ -2,7 +2,7 @@ import { Styles } from 'example/styles/reactNativeStyles';
 import React, { useState } from 'react';
 import { FlatList, SafeAreaView, Text, TouchableOpacity } from 'react-native';
 
-const Check = () => {
+const reactNativeCalculator = () => {
   const [clickValue, setClickValue] = useState('');
   let data = [];
 
@@ -113,4 +113,4 @@ const Check = () => {
   );
 };
 
-export default Check;
+export default reactNativeCalculator;
