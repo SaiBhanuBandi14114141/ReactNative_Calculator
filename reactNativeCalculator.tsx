@@ -1,4 +1,4 @@
-import { Styles } from 'example/styles/check1.styles';
+import { Styles } from 'example/styles/reactNativeStyles';
 import React, { useState } from 'react';
 import { FlatList, SafeAreaView, Text, TouchableOpacity } from 'react-native';
 
