@@ -1,3 +1,4 @@
+import { FlashList } from '@shopify/flash-list';
 import { Styles } from 'example/styles/reactNativeStyles';
 import React, { useState } from 'react';
 import { FlatList, SafeAreaView, Text, TouchableOpacity } from 'react-native';
@@ -102,13 +103,17 @@ const ReactNativeCalculator = () => {
   );
 
   return (
-    <SafeAreaView>
+     <SafeAreaView style={Styles.safeAreaView}>
+      <Text style={Styles.headingView}>Basic Calculator</Text>
       <Text style={Styles.textContainer}>{clickValue}</Text>
-      <FlatList
-        data={DATA}
-        numColumns={3}
-        renderItem={({ item }) => <Item title={item.title} />}
-      />
+      <View style={Styles.flashListView}>
+        <FlashList
+          data={DATA}
+          numColumns={3}
+          renderItem={({ item }) => <Item title={item.title} />}
+          estimatedItemSize={15}
+        />
+      </View>
     </SafeAreaView>
   );
 };
