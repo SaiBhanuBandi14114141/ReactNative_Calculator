@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 export const Styles = StyleSheet.create({
   mainContainer: {
@@ -45,5 +45,12 @@ export const Styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 30,
     color: 'blue',
+  },
+  safeAreaView: {
+    backgroundColor: 'violet',
+  },
+  flashListView: {
+    height: Dimensions.get('screen').height,
+    width: Dimensions.get('screen').width,
   },
 });
