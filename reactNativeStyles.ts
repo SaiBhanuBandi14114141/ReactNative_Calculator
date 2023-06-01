@@ -27,13 +27,23 @@ export const Styles = StyleSheet.create({
     borderColor: 'grey',
     borderWidth: 2,
     borderRadius: 10,
+    marginVertical: '10%',
+    marginHorizontal: '10%',
+    padding: '4%',
+    textAlign: 'center',
+    fontSize: 20,
+    color: 'white',
+  },
+  numberTextSize: {
+    fontSize: 18,
+  },
+  headingView: {
+    borderColor: 'grey',
     marginTop: '10%',
     marginHorizontal: '10%',
     padding: '4%',
     textAlign: 'center',
-    fontSize: 16,
-  },
-  numberTextSize: {
-    fontSize: 18,
+    fontSize: 30,
+    color: 'blue',
   },
 });
